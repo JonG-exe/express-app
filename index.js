@@ -19,8 +19,8 @@ app.get("/done", (req, res) => {
     res.json({"done" : "You've finally gotten your Degree!"})
 })
 
-app.get("/jadel", (req, res) => {
-    res.json({"jadel" : "a boy that i think that i like"})
+app.get("/next", (req, res) => {
+    res.json({"next" : "now onto the next chapter of life!"})
 })
 
 app.listen(PORT, () => console.log(`Running on port: http://localhost:${PORT}`))
