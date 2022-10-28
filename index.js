@@ -7,9 +7,7 @@ const
     app = express(),
     PORT = process.env.PORT || 5000;
 
-app.use(cors({
-    origin: "https://express-app-coral.vercel.app" 
-}))
+app.use(cors())
 
 app.use(express.static("public"))
 
@@ -25,4 +23,4 @@ app.get("/jadel", (req, res) => {
     res.json({"jadel" : "a boy that i think that i like"})
 })
 
-app.listen(PORT, () => console.log("Running on port: ", PORT))
+app.listen(PORT, () => console.log(`Running on port: http://localhost:${PORT}`))
