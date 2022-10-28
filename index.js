@@ -7,9 +7,9 @@ const
     app = express(),
     PORT = process.env.PORT || 5000;
 
-app.use(cors, {
+app.use(cors({
     origin: "https://express-app-coral.vercel.app" 
-})
+}))
 
 app.use(express.static("public"))
 
